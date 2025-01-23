@@ -45,8 +45,8 @@ importers:
         specifier: 2.1.8
         version: 2.1.8(vitest@2.1.8(@types/node@22.1.0)(happy-dom@14.12.3)(sass@1.83.4)(terser@5.31.5))
       '@vue/eslint-config-prettier':
-        specifier: 9.0.0
-        version: 9.0.0(@types/eslint@9.6.0)(eslint@9.8.0)(prettier@3.4.2)
+        specifier: 10.2.0
+        version: 10.2.0(@types/eslint@9.6.0)(eslint@9.8.0)(prettier@3.4.2)
       '@vue/test-utils':
         specifier: 2.4.6
         version: 2.4.6
@@ -60,11 +60,11 @@ importers:
         specifier: 9.8.0
         version: 9.8.0
       eslint-config-prettier:
-        specifier: 9.1.0
-        version: 9.1.0(eslint@9.8.0)
+        specifier: 10.0.1
+        version: 10.0.1(eslint@9.8.0)
       eslint-plugin-prettier:
         specifier: 5.2.1
-        version: 5.2.1(@types/eslint@9.6.0)(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.4.2)
+        version: 5.2.1(@types/eslint@9.6.0)(eslint-config-prettier@10.0.1(eslint@9.8.0))(eslint@9.8.0)(prettier@3.4.2)
       happy-dom:
         specifier: 14.12.3
         version: 14.12.3
@@ -1722,10 +1722,10 @@ packages:
   '@vue/devtools-shared@7.7.0':
     resolution: {integrity: sha512-jtlQY26R5thQxW9YQTpXbI0HoK0Wf9Rd4ekidOkRvSy7ChfK0kIU6vvcBtjj87/EcpeOSK49fZAicaFNJcoTcQ==}
 
-  '@vue/eslint-config-prettier@9.0.0':
-    resolution: {integrity: sha512-z1ZIAAUS9pKzo/ANEfd2sO+v2IUalz7cM/cTLOZ7vRFOPk5/xuRKQteOu1DErFLAh/lYGXMVZ0IfYKlyInuDVg==}
+  '@vue/eslint-config-prettier@10.2.0':
+    resolution: {integrity: sha512-GL3YBLwv/+b86yHcNNfPJxOTtVFJ4Mbc9UU3zR+KVoG7SwGTjPT+32fXamscNumElhcpXW3mT0DgzS9w32S7Bw==}
     peerDependencies:
-      eslint: '>= 8.0.0'
+      eslint: '>= 8.21.0'
       prettier: '>= 3.0.0'
 
   '@vue/reactivity@3.5.13':
@@ -2705,8 +2705,8 @@ packages:
   eslint-config-flat-gitignore@0.2.0:
     resolution: {integrity: sha512-s4lsQLYX+76FCt3PZPwdLwWlqssa5SLufl2gopFmCo3PETOLY3OW5IrD3/l2R0FfYEJvd9BRJ19yJ+yfc5oW3g==}
 
-  eslint-config-prettier@9.1.0:
-    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
+  eslint-config-prettier@10.0.1:
+    resolution: {integrity: sha512-lZBts941cyJyeaooiKxAtzoPHTN+GbQTJFAIdQbRhA4/8whaAraEh47Whw/ZFfrjNSnlAxqfm9i0XVAEkULjCw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -2736,6 +2736,20 @@ packages:
 
   eslint-plugin-prettier@5.2.1:
     resolution: {integrity: sha512-gH3iR3g4JfF+yYPaJYkN7jEl9QbweL/YfkoRlNnuIEHEz1vHVlCmWOS+eGGiRuzHQXdJFCOTxRgvju9b8VUmrw==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      '@types/eslint': '>=8.0.0'
+      eslint: '>=8.0.0'
+      eslint-config-prettier: '*'
+      prettier: '>=3.0.0'
+    peerDependenciesMeta:
+      '@types/eslint':
+        optional: true
+      eslint-config-prettier:
+        optional: true
+
+  eslint-plugin-prettier@5.2.3:
+    resolution: {integrity: sha512-qJ+y0FfCp/mQYQ/vWQ3s7eUlFEL4PyKfAJxsnYTJ4YT73nsJBWqmEpFryxV9OeUiqmsTsYJ5Y+KDNaeP31wrRw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       '@types/eslint': '>=8.0.0'
@@ -7475,11 +7489,11 @@ snapshots:
   '@types/eslint-scope@3.7.7':
     dependencies:
       '@types/eslint': 9.6.0
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   '@types/eslint@9.6.0':
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       '@types/json-schema': 7.0.15
 
   '@types/estree@1.0.5': {}
@@ -7908,11 +7922,11 @@ snapshots:
     dependencies:
       rfdc: 1.4.1
 
-  '@vue/eslint-config-prettier@9.0.0(@types/eslint@9.6.0)(eslint@9.8.0)(prettier@3.4.2)':
+  '@vue/eslint-config-prettier@10.2.0(@types/eslint@9.6.0)(eslint@9.8.0)(prettier@3.4.2)':
     dependencies:
       eslint: 9.8.0
-      eslint-config-prettier: 9.1.0(eslint@9.8.0)
-      eslint-plugin-prettier: 5.2.1(@types/eslint@9.6.0)(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.4.2)
+      eslint-config-prettier: 10.0.1(eslint@9.8.0)
+      eslint-plugin-prettier: 5.2.3(@types/eslint@9.6.0)(eslint-config-prettier@10.0.1(eslint@9.8.0))(eslint@9.8.0)(prettier@3.4.2)
       prettier: 3.4.2
     transitivePeerDependencies:
       - '@types/eslint'
@@ -8910,7 +8924,7 @@ snapshots:
     transitivePeerDependencies:
       - eslint
 
-  eslint-config-prettier@9.1.0(eslint@9.8.0):
+  eslint-config-prettier@10.0.1(eslint@9.8.0):
     dependencies:
       eslint: 9.8.0
 
@@ -8967,7 +8981,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-prettier@5.2.1(@types/eslint@9.6.0)(eslint-config-prettier@9.1.0(eslint@9.8.0))(eslint@9.8.0)(prettier@3.4.2):
+  eslint-plugin-prettier@5.2.1(@types/eslint@9.6.0)(eslint-config-prettier@10.0.1(eslint@9.8.0))(eslint@9.8.0)(prettier@3.4.2):
     dependencies:
       eslint: 9.8.0
       prettier: 3.4.2
@@ -8975,7 +8989,17 @@ snapshots:
       synckit: 0.9.1
     optionalDependencies:
       '@types/eslint': 9.6.0
-      eslint-config-prettier: 9.1.0(eslint@9.8.0)
+      eslint-config-prettier: 10.0.1(eslint@9.8.0)
+
+  eslint-plugin-prettier@5.2.3(@types/eslint@9.6.0)(eslint-config-prettier@10.0.1(eslint@9.8.0))(eslint@9.8.0)(prettier@3.4.2):
+    dependencies:
+      eslint: 9.8.0
+      prettier: 3.4.2
+      prettier-linter-helpers: 1.0.0
+      synckit: 0.9.1
+    optionalDependencies:
+      '@types/eslint': 9.6.0
+      eslint-config-prettier: 10.0.1(eslint@9.8.0)
 
   eslint-plugin-regexp@2.7.0(eslint@9.8.0):
     dependencies:
@@ -12365,7 +12389,7 @@ snapshots:
   webpack@5.93.0(esbuild@0.24.2):
     dependencies:
       '@types/eslint-scope': 3.7.7
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       '@webassemblyjs/ast': 1.12.1
       '@webassemblyjs/wasm-edit': 1.12.1
       '@webassemblyjs/wasm-parser': 1.12.1
