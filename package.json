@@ -29,7 +29,7 @@
     "@nuxtjs/sitemap": "5.3.5",
     "@nuxtjs/stylelint-module": "5.2.0",
     "@nuxtjs/tailwindcss": "6.13.1",
-    "@unocss/reset": "0.65.4",
+    "@unocss/reset": "65.4.3",
     "@vee-validate/nuxt": "4.15.0",
     "@vee-validate/yup": "4.15.0",
     "@vitest/coverage-v8": "2.1.8",
