@@ -33,8 +33,8 @@ importers:
         specifier: 6.13.1
         version: 6.13.1(magicast@0.3.5)(rollup@4.32.0)
       '@unocss/reset':
-        specifier: 0.65.4
-        version: 0.65.4
+        specifier: 65.4.3
+        version: 65.4.3
       '@vee-validate/nuxt':
         specifier: 4.15.0
         version: 4.15.0(magicast@0.3.5)(rollup@4.32.0)(vue@3.5.13(typescript@5.7.3))
@@ -1337,8 +1337,8 @@ packages:
     peerDependencies:
       vue: '>=2.7 || >=3'
 
-  '@unocss/reset@0.65.4':
-    resolution: {integrity: sha512-m685H0KFvVMz6R2i5GDIFv4RS9Z7y2G8hJK7xg2OWli+7w8l2ZMihYvXKofPsst4q/ms8EgKXpWc/qqUOTucvA==}
+  '@unocss/reset@65.4.3':
+    resolution: {integrity: sha512-f9QnMtY1yPS1HEIkeKmSwUYcp4QS6zdo9ZcIFE9PDSLOcns3v+M1lTQg8mLChxJHVl73Cf6PofWVh5tmnxV53Q==}
 
   '@vee-validate/nuxt@4.15.0':
     resolution: {integrity: sha512-AhQHPLxH4tTf35op+ifkBhnnRwv/EzT8Fi9PQlEwKyLGZgepFQO1qTm6IyaA6aoSKcFWHz3R3hyMrMQdXbiOxQ==}
@@ -6882,7 +6882,7 @@ snapshots:
       unhead: 1.11.18
       vue: 3.5.13(typescript@5.7.3)
 
-  '@unocss/reset@0.65.4': {}
+  '@unocss/reset@65.4.3': {}
 
   '@vee-validate/nuxt@4.15.0(magicast@0.3.5)(rollup@4.32.0)(vue@3.5.13(typescript@5.7.3))':
     dependencies:
